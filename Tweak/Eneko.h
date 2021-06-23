@@ -75,7 +75,7 @@ BOOL hideWhenLowPowerSwitch = YES;
 - (void)adjustFrame;
 @end
 
-@interface SBIconController : UIViewController
+@interface SBWallpaperViewController : UIViewController
 - (void)adjustFrame;
 @end
 

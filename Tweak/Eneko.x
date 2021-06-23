@@ -129,7 +129,7 @@
 
 %group Homescreen
 
-%hook SBIconController
+%hook SBWallpaperViewController
 
 - (void)viewDidLoad { // add player to the homescreen
 
@@ -155,7 +155,7 @@
     [playerLayerHS setFrame:[[[self view] layer] bounds]];
     [playerLayerHS setTransform:CATransform3DMakeScale(1.15, 1.15, 2)];
     [playerLayerHS setOpacity:[homescreenOpacityValue doubleValue]];
-    [[[self view] layer] insertSublayer:playerLayerHS atIndex:0];
+    [[[self view] layer] addSublayer:playerLayerHS];
 
 
     // dim and blur superview
